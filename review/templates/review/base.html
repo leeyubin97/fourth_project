@@ -1,0 +1,12 @@
+{% load static %}
+<head>
+    <link rel="stylesheet" href="{% static 'css/review.css' %}">
+</head>
+<body>
+    <h1><mark>다양한 의견 공유해주세요</mark></h1>
+    <div>
+        <a href="{% url 'home' %}">홈으로</a>
+    </div>
+    {% block content %}
+    {% endblock %}
+</body>

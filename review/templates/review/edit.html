@@ -1,0 +1,14 @@
+
+{% extends "review/base.html" %}
+{% block content %}
+<head>
+</head>
+<body>
+    <h3> 리뷰를 수정합니다 </h3>
+    <form method="POST" class="post-form">
+        {% csrf_token %}
+        {{form.as_p}}
+        <button type="submit" class="btn btn-primary">저장</button>
+    </form>
+</body>
+{% endblock %}
